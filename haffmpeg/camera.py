@@ -13,7 +13,7 @@ class CameraMjpeg(HAFFmpeg):
         command = [
             "-an",
             "-c:v",
-            "mjpeg",
+            "copy",
         ]
 
         yield from self.open(
